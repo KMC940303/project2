@@ -3,3 +3,25 @@
 #content{padding-top: 90px;}
 #content .controller{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #f00; width: 570px; height: 20px; z-index: 500;}
 .controller .swiper-auto-wrap button{position: absolute; right: 0; top: 0; font-size: 20px;}
+
+/* 본문 2,3 공통 */
+.product_tab{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content:center; justify-content:center; flex-wrap: wrap; margin: 0 100px;}
+.product_tab .tabpanel{display: none;}
+.product_tab .tabpanel.active{display: block;}
+.product_tab ul{display: flex; justify-content: space-between;}
+.product_tab ul li{padding: 60px 60px; text-align: center; cursor: pointer;}
+.product_tab .tabpanel{position: relative;}
+.product_tab .notebook_txt{position: absolute; width:1000px; height: 200px; right: 100px; top: 160px; line-height: 45px; font-size: 18px;}
+.product_tab .notebook_txt strong{font-size: 50px;}
+.product_tab .notebook_txt a{top: 70%; position: absolute; right: 50%; border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px;}
+
+/* #moniter .product_tab ul{display: flex; justify-content: space-between;}
+#moniter .product_tab ul li{padding: 60px 60px; text-align: center; cursor: pointer;}
+#moniter .product_tab .tabpanel{position: relative;}
+#moniter .product_tab .moniter_txt{position: absolute; width:1000px; height: 200px; right: 100px; top: 160px; line-height: 45px; font-size: 18px;}
+#moniter .product_tab .moniter_txt p{position: relative; top: -45px;}
+#moniter .product_tab .moniter_txt strong{position: relative; top: -50px; font-size: 50px;}
+#moniter .product_tab .moniter_txt a{top: 70%; position: absolute; right: 50%; border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px;}
+#moniter .product_tab .tabpanel{display: none;}
+#moniter .product_tab .tabpanel.active{display: block;}
+.notebook_txt{} */
