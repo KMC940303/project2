@@ -36,6 +36,7 @@ button,input{font-family: inherit; font-size: inherit; color: inherit; line-heig
 button{border: none; background: none; cursor: pointer;}
 input[type="text"]{border: 1px solid #aaa;}
 img{vertical-align: top; max-width: 100%;}
+a{display: inline-block;}
 a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
 header, nav, main, section, footer{display: block;}
 

@@ -1,27 +1,58 @@
 @charset "uft-8";
 
 #content{padding-top: 90px;}
-#content .controller{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #f00; width: 570px; height: 20px; z-index: 500;}
-.controller .swiper-auto-wrap button{position: absolute; right: 0; top: 0; font-size: 20px;}
+#mainVisual .controller{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 420px; height: 20px; z-index: 500;}
+#mainVisual .swiper-pagination-bullet {
+    width: 90px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: #2699fb;
+    opacity: 1;
+}
+#mainVisual .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #2699fb;
+}
+#mainVisual .swiper-pagination-bullet::after{content: ""; display: block; width: 100%; height: 100%; border-radius: 5px; background: #bce0fd; width: 0;}
+#mainVisual .swiper-pagination-bullet-active::after{width: 100%; animation: bullet 5s backwards;}
+.controller .swiper-auto-wrap button{position: absolute; right: 0; top: 0; font-size: 20px; color: #bce0fd;}
+@keyframes bullet {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
 
 /* 본문 2,3 공통 */
-.product_tab{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content:center; justify-content:center; flex-wrap: wrap; margin: 0 100px;}
-.product_tab .tabpanel{display: none;}
-.product_tab .tabpanel.active{display: block;}
-.product_tab ul{display: flex; justify-content: space-between;}
-.product_tab ul li{padding: 60px 60px; text-align: center; cursor: pointer;}
-.product_tab .tabpanel{position: relative;}
-.product_tab .notebook_txt{position: absolute; width:1000px; height: 200px; right: 100px; top: 160px; line-height: 45px; font-size: 18px;}
-.product_tab .notebook_txt strong{font-size: 50px;}
-.product_tab .notebook_txt a{top: 70%; position: absolute; right: 50%; border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px;}
+.product_tab{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content:center; justify-content:center; flex-wrap: wrap; margin:100px 100px;}
+.product_tab .tabpanel{visibility: hidden; max-height: 0; overflow: hidden;}
+.product_tab .tabpanel.active{visibility: visible; max-height: 1000px;}
+.product_tab ul, .product_tab .tabpanel{width: 100%;}
+.product_tab ul{display: flex; justify-content: space-around; padding: 60px 0;}
+.product_tab ul li{text-align: center; cursor: pointer;}
+.product_tab ul li:hover, .product_tab ul li:focus{color: #2699fb;}
+.product_tab .tabpanel{position: relative; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; justify-content: space-around; -webkit-align-items: center; align-items: center;}
+#moniter .product_tab .tabpanel{flex-direction: row-reverse;}
+.product_tab .panel img{width: 42%;}
+.product_tab .panel_txt{width: 35%; line-height: 45px; font-size: 18px; text-align: center;}
+.product_tab .panel_txt strong{font-size: 50px; display: block; padding-bottom: 30px; color: #4e3b3b;}
+.product_tab .panel_txt p{text-align: left;}
+.product_tab .panel_txt a{border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px; transition: background 0.5s; color: #4e3b3b;}
+.product_tab .panel_txt a:hover, .product_tab .panel_txt a:focus{background: #bce0fd; color: #fff;}
 
-/* #moniter .product_tab ul{display: flex; justify-content: space-between;}
-#moniter .product_tab ul li{padding: 60px 60px; text-align: center; cursor: pointer;}
-#moniter .product_tab .tabpanel{position: relative;}
-#moniter .product_tab .moniter_txt{position: absolute; width:1000px; height: 200px; right: 100px; top: 160px; line-height: 45px; font-size: 18px;}
-#moniter .product_tab .moniter_txt p{position: relative; top: -45px;}
-#moniter .product_tab .moniter_txt strong{position: relative; top: -50px; font-size: 50px;}
-#moniter .product_tab .moniter_txt a{top: 70%; position: absolute; right: 50%; border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px;}
-#moniter .product_tab .tabpanel{display: none;}
-#moniter .product_tab .tabpanel.active{display: block;}
-.notebook_txt{} */
+#event{width: 100%; height: 900px; margin: 10px 0; position: relative; margin: 60px 0;}
+#event h3{font-size: 80px; text-align: center; color: #4e3b3b;}
+#event .all{position: absolute; right: 48.1%; margin: 40px 0; color: #2699fb;}
+#event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 100px 50px; justify-content: space-between;}
+#event ul li{cursor: pointer; width: 50%;}
+#event ul li:hover, #event ul li:focus{}
+#event ul li a{font-size: 20px; margin: 30px 0;}
+
+#footer{width: 100%; background: #f5f5f5;}
+#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; margin:100px; width: 100%; justify-content: space-between;}
+#footer a:hover, #footer a:focus{color: #2699fb;}
+#footer ul h3{font-size: 20px;}
+#footer .showlist{flex-direction: column; padding: 30px 20px;}
+#footer .showlist li{padding: 20px 0; font-size: 15px;}
+#footer i{font-size: 45px; padding: 30px 14px;}
+#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height: 50px;}
+#footer .footer_last a{padding: 0 10px;}
