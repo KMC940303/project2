@@ -1,0 +1,5 @@
+@charset "uft-8";
+
+#content{padding-top: 90px;}
+#content .controller{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #f00; width: 570px; height: 20px; z-index: 500;}
+.controller .swiper-auto-wrap button{position: absolute; right: 0; top: 0; font-size: 20px;}

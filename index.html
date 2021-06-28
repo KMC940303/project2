@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 에이수스 </title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/xeicon.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#content">본문 바로가기</a>
+  </div>
+  <div id="wrap">
+    <header id="pcHeader" class="header">
+      <h1 class="logo p_a">
+        <a href=""><img src="images/common/logo.png" alt=""></a>
+      </h1>
+      <div class="util p_a d_f">
+        <div class="search">
+          <button type="submit" class="search_open_btn">
+            <i class="xi-search"></i>
+            <span class="blind">검색</span>
+          </button>
+          <div class="search_wrap">
+            <form action="index.html">
+              <label for="searchText" class="blind">검색어</label>
+              <input type="text" id="searchText" placeholder="검색어를 입력하세요.">
+              <button type="submit">
+                <i class="xi-search"></i>
+                <span class="blind">검색</span>
+              </button>
+            </form>
+            <button type="submit" class="search_close_btn">
+              <i class="xi-close"></i>
+              <span class="blind">검색 닫기</span>
+            </button>
+          </div>
+        </div>
+        <a href="" class="members">
+          <i class="xi-user"></i>
+          <span class="blind">로그인</span>
+        </a>
+      </div>
+      <nav id="pcGnb" class="on gnb">
+        <ul class="d_f dep1">
+          <li>
+            <a href="">노트북</a>
+            <ul class="dep2">
+              <li>
+                <p>노트북</p>
+                <ul class="dep3">
+                  <li><a href="">ProArt StudioBook</a></li>
+                  <li><a href="">ZenBook</a></li>
+                  <li><a href="">VivoBook</a></li>
+                  <li><a href="">ExpertBook</a></li>
+                  <li><a href="">Chromebook</a></li>
+                  <li><a href="">Daily Laptop</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>비즈니스 노트북</p>
+                <ul class="dep3">
+                  <li><a href="">ProArt StudioBook</a></li>
+                  <li><a href="">ExpertBook</a></li>
+                  <li><a href="">Chromebook</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>게이밍 노트북</p>
+                <ul class="dep3">
+                  <li><a href="">ROG - Republic of Gamers</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">디스플레이</a>
+            <ul class="dep2">
+              <li>
+                <p>모니터</p>
+                <ul class="dep3">
+                  <li><a href="">Gaming</a></li>
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">ProArt</a></li>
+                  <li><a href="">ZenScreen</a></li>
+                  <li><a href="">Eye Care</a></li>
+                  <li><a href="">Designo</a></li>
+                  <li><a href="">Touch</a></li>
+                  <li><a href="">Business</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>프로젝터</p>
+                <ul class="dep3">
+                  <li><a href="">ProArt</a></li>
+                  <li><a href="">Portable</a></li>
+                  <li><a href="">Entertainment</a></li>
+                  <li><a href="">Business</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>일체형 pc</p>
+                <ul class="dep3">
+                  <li><a href="">Zen AiO</a></li>
+                  <li><a href="">ASUS AiO</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>데스크탑</p>
+                <ul class="dep3">
+                  <li><a href="">ASUS 데스크탑</a></li>
+                  <li><a href="">ExpertCenter</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>게이밍 데스크탑</p>
+                <ul class="dep3">
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">ROG Strix</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>미니 pc</p>
+                <ul class="dep3">
+                  <li><a href="">ProArt</a></li>
+                  <li><a href="">VivoMini</a></li>
+                  <li><a href="">Stick PCs</a></li>
+                  <li><a href="">Chrome OS 디바이스</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>워크스테이션</p>
+                <ul class="dep3">
+                  <li><a href="">퍼포먼스</a></li>
+                  <li><a href="">메인스트림</a></li>
+                  <li><a href="">에센셜</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">메인보드</a>
+            <ul class="dep2">
+              <li>
+                <p>메인보드</p>
+                <ul class="dep3">
+                  <li><a href="">PRIME</a></li>
+                  <li><a href="">ProArt</a></li>
+                  <li><a href="">Workstation</a></li>
+                  <li><a href="">ROG - Republic of Gamers</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">CSM (Corporate Stable Model)</a></li>
+                  <li><a href="">비즈니스</a></li>
+                  <li><a href="">악세사리</a></li>
+                  <li><a href="">Expedition</a></li>
+                  <li><a href="">기타</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>게이밍 케이스</p>
+                <ul class="dep3">
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">게이밍 케이스 악세사리</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>쿨링</p>
+                <ul class="dep3">
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>외장 그래픽 독</p>
+                <ul class="dep3">
+                  <li><a href="">XG-STATION-PRO</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">ROG XG STATION 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">네트워크</a>
+            <ul class="dep2">
+              <li>
+                <p>WiFi 6</p>
+                <ul class="dep3">
+                  <li><a href="">WiFi Routers</a></li>
+                  <li><a href="">Whole Home Mesh WiFi System</a></li>
+                  <li><a href="">Wireless Adapters</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>메쉬 WiFi 시스템</p>
+                <ul class="dep3">
+                  <li><a href="">AiMesh WiFi Routers and Systems</a></li>
+                  <li><a href="">ZenWiFi WiFi Systems</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>유/무선 어답터</p>
+                <ul class="dep3">
+                  <li><a href="">Wireless Adapters</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>서버</p>
+                <ul class="dep3">
+                  <li><a href="">서버 메인보드</a></li>
+                  <li><a href="">서버 악세사리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">악세서리</a>
+            <ul class="dep2">
+              <li>
+                <p>키보드</p>
+                <ul class="dep3">
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">ASUS Keyboard</a></li>
+                  <li><a href="">ProArt</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>마우스</p>
+                <ul class="dep3">
+                  <li><a href="">ROG</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">ASUS Mouse and Mouse Pad</a></li>
+                  <li><a href="">ProArt</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>헤드셋</p>
+                <ul class="dep3">
+                  <li><a href="">ROG - Republic of Gamers</a></li>
+                  <li><a href="">TUF Gaming</a></li>
+                  <li><a href="">ASUS Headset and Audio</a></li>
+                  <li><a href="">Headsets Accessories</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mHeader" class="header">
+      <h1 class="logo">
+        <a href=""><img src="images/common/logo.png" alt=""></a>
+      </h1>
+      <button class="gnb_open_btn" type="button">
+        <i class="xi-bars"></i>
+        <span class="blind">전체메뉴열기</span>
+      </button>
+      <div class="mGnb_wrap">
+        <div class="gnb_top">
+          <img src="images/common/logo.png" alt="">
+        </div>
+        <nav id="mGnb" class="gnb">
+          <ul>
+            <li>
+              <a href="">노트북</a>
+              <ul>
+                <li>
+                  <a href="">노트북</a>
+                  <ul>
+                    <li><a href="">ProArt StudioBook</a></li>
+                    <li><a href="">ZenBook</a></li>
+                    <li><a href="">VivoBook</a></li>
+                    <li><a href="">ExpertBook</a></li>
+                    <li><a href="">Chromebook</a></li>
+                    <li><a href="">Daily Laptop</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">비즈니스 노트북</a>
+                  <ul>
+                    <li><a href="">ProArt StudioBook</a></li>
+                    <li><a href="">ExpertBook</a></li>
+                    <li><a href="">Chromebook</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">게이밍 노트북</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">데스크탑</a>
+              <ul>
+                <li>
+                  <a href="">메인보드</a>
+                  <ul>
+                    <li><a href="">PRIME</a></li>
+                    <li><a href="">ProArt</a></li>
+                    <li><a href="">Workstation</a></li>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">CSM (Corporate Stable Model)</a></li>
+                    <li><a href="">비즈니스</a></li>
+                    <li><a href="">악세사리</a></li>
+                    <li><a href="">Expedition</a></li>
+                    <li><a href="">기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">게이밍 케이스</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">게이밍 케이스 악세사리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">쿨링</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">외장 그래픽 독</a>
+                  <ul>
+                    <li><a href="">XG-STATION-PRO</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">ROG XG STATION 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">메인보드</a>
+              <ul>
+                <li>
+                  <a href="">메인보드</a>
+                  <ul>
+                    <li><a href="">PRIME</a></li>
+                    <li><a href="">ProArt</a></li>
+                    <li><a href="">Workstation</a></li>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">CSM (Corporate Stable Model)</a></li>
+                    <li><a href="">비즈니스</a></li>
+                    <li><a href="">악세사리</a></li>
+                    <li><a href="">Expedition</a></li>
+                    <li><a href="">기타</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">게이밍 케이스</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">게이밍 케이스 악세사리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">쿨링</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">외장 그래픽 독</a>
+                  <ul>
+                    <li><a href="">XG-STATION-PRO</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">ROG XG STATION 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">네트워크</a>
+              <ul>
+                <li>
+                  <a href="">WiFi 6</a>
+                  <ul>
+                    <li><a href="">WiFi Routers</a></li>
+                    <li><a href="">Whole Home Mesh WiFi System</a></li>
+                    <li><a href="">Wireless Adapters</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">메쉬 WiFi 시스템</a>
+                  <ul>
+                    <li><a href="">AiMesh WiFi Routers and Systems</a></li>
+                    <li><a href="">ZenWiFi WiFi Systems</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">유/무선 어답터</a>
+                  <ul>
+                    <li><a href="">Wireless Adapters</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">서버</a>
+                  <ul>
+                    <li><a href="">서버 메인보드</a></li>
+                    <li><a href="">서버 악세사리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">악세서리</a>
+              <ul>
+                <li>
+                  <a href="">키보드</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">ASUS Keyboard</a></li>
+                    <li><a href="">ProArt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">마우스</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">ASUS Mouse and Mouse Pad</a></li>
+                    <li><a href="">ProArt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">헤드셋</a>
+                  <ul>
+                    <li><a href="">ROG</a></li>
+                    <li><a href="">TUF Gaming</a></li>
+                    <li><a href="">ASUS Headset and Audio</a></li>
+                    <li><a href="">Headsets Accessories</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <button class="gnb_close_btn" type="button">
+          <i class="xi-close-min"></i>
+          <span class="blind">전체메뉴닫기</span>
+        </button>
+      </div>
+    </header>
+    <main id="content">
+      <h2 class="blind">에이수스 메인</h2>
+      <section id="mainVisual">
+        <h3 class="blind">추천 상품</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+              <img src="images/main/asus_slide1.jpg" alt="" class="m_img">
+            </div>
+            <div class="swiper-slide slide2">
+              <img src="images/main/asus_slide2.jpg" alt="" class="m_img">
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="images/main/asus_slide3.jpg" alt="" class="m_img">
+            </div>
+            <div class="swiper-slide slide4">
+              <img src="images/main/asus_slide4.jpg" alt="" class="m_img">
+            </div>
+          </div>
+          <div class="controller">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-auto-wrap">
+              <button class="swiper-auto-play hidden" type="button">
+                <i class="xi-play-circle-o"></i>
+                <span class="blind">자동실행</span>
+              </button>
+              <button class="swiper-auto-pause" type="button">
+                <i class="xi-recording-stop"></i>
+                <span class="blind">일시정지</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="noteBook">
+        <h3 class="blind" id="notebookTitle">노트북</h3>
+        <div class="product_tab">
+          <ul role="tablist" aria-labelledby="notebookTitle">
+            <li role="tab" aria-controls="tabpanel1" id="tab1" class="tab first">ProArt StudioBook</li>
+            <li role="tab" aria-controls="tabpanel2" id="tab2" class="tab">ZenBook</li>
+            <li role="tab" aria-controls="tabpanel3" id="tab3" class="tab">VivoBook</li>
+            <li role="tab" aria-controls="tabpanel4" id="tab4" class="tab">ExpertBook</li>
+            <li role="tab" aria-controls="tabpanel5" id="tab5" class="tab">Chromebook</li>
+            <li role="tab" aria-controls="tabpanel6" id="tab6" class="tab last">Daily Laptop</li>
+          </ul>
+          <div role="tabpanel" aria-labelledby="tab1" id="tabpanel1" class="tabpanel">
+            <img src="images/main/notebook1.jpg" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab2" id="tabpanel2" class="tabpanel">
+            <img src="images/main/notebook2.jpg" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab3" id="tabpanel3" class="tabpanel">
+            <img src="images/main/notebook3.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab4" id="tabpanel4" class="tabpanel">
+            <img src="images/main/notebook4.jpg" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab5" id="tabpanel5" class="tabpanel">
+            <img src="images/main/notebook5.jpg" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab6" id="tabpanel6" class="tabpanel">
+            <img src="images/main/notebook6.jpg" alt="...">
+          </div>
+        </div>
+      </section>
+      <section id="moniter">
+        <h3 class="blind" id="moniterTitle">모니터</h3>
+        <div class="product_tab">
+          <ul role="tablist" aria-labelledby="moniterTitle">
+            <li role="tab" aria-controls="tabpanel1" id="tab1" class="tab first">Gaming</li>
+            <li role="tab" aria-controls="tabpanel2" id="tab2" class="tab">ROG</li>
+            <li role="tab" aria-controls="tabpanel3" id="tab3" class="tab">TUF Gaming</li>
+            <li role="tab" aria-controls="tabpanel4" id="tab4" class="tab">ProArt</li>
+            <li role="tab" aria-controls="tabpanel5" id="tab5" class="tab">ZenScreen</li>
+            <li role="tab" aria-controls="tabpanel6" id="tab6" class="tab last">Eye Care</li>
+          </ul>
+          <div role="tabpanel" aria-labelledby="tab1" id="tabpanel1" class="tabpanel">
+            <img src="images/main/moniter1.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab2" id="tabpanel2" class="tabpanel">
+            <img src="images/main/moniter2.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab3" id="tabpanel3" class="tabpanel">
+            <img src="images/main/moniter3.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab4" id="tabpanel4" class="tabpanel">
+            <img src="images/main/moniter4.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab5" id="tabpanel5" class="tabpanel">
+            <img src="images/main/moniter5.png" alt="...">
+          </div>
+          <div role="tabpanel" aria-labelledby="tab6" id="tabpanel6" class="tabpanel">
+            <img src="images/main/moniter6.png" alt="...">
+          </div>
+        </div>
+      </section>
+      <section id="event">
+        <h3 class="title">이벤트</h3>
+        <a href="">모두보기</a>
+        <ul>
+          <li>리뷰 남기고 에어팟 프로 받아가자!</li>
+          <li>ROG 마스터즈가 돌아왔습니다.</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <ul>
+        <li>
+          <h3>더 알아보기</h3>
+          <ul class="showlist">
+            <li>
+              <a href="https://asusdesign.com/" target="_Blank" rel="">에이수스 디자인 센터</a>
+            </li>
+            <li>
+              <a href="https://www.asus.com/Microsite/commercial/ASUSPRO/" target="_Blank" rel="">에이수스프로</a>
+            </li>
+            <li>
+              <a href="">MB, VGA, LCD, GG &amp; etc</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>지원 및 서비스</h3>
+          <ul class="showlist">
+            <li>
+              <a href="https://www.asus.com/kr/support/Repair-Status-Inquiry/?cname=Korea" target="_Self" rel="">수리 상태
+                확인</a>
+            </li>
+            <li>
+              <a href="https://www.asus.com/support/service-center-location" target="_Self" rel="">서비스 센터 정보</a>
+            </li>
+            <li class="footerlinkItemx">
+              <a href="https://account.asus.com/" target="_Self" rel="">제품 등록</a>
+            </li>
+            <li>
+              <a href="https://www.asus.com/kr/Static_WebPage/Downloads/" target="_Self" rel="">
+                제품 카탈로그 다운로드
+              </a>
+            </li>
+            <li>
+              <a href="https://www.asus.com/support/CallUs" target="_Self" rel="">에이수스 대표번호 1566-6868</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/ASUSCSC" target="_Self" rel="">ASUS Support Videos</a>
+            </li>
+            <li>
+              <a href="https://www.asus.com/kr/support/MyASUS-deeplink/" target="_Self" rel="">MyASUS</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>ASUS 정보</h3>
+          <ul class="showlist">
+            <li><a href="">에이수스 소개</a></li>
+            <li><a href="">뉴스</a></li>
+            <li><a href="">관련 기사</a></li>
+            <li><a href="">Corporate social responsibility </a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>커뮤니티</h3>
+          <ul>
+            <li>
+              <a href="">
+                <i class="xi-instagram"></i>
+                <span class="blind">인스타그램</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="xi-youtube"></i>
+                <span class="blind">유튜브</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="xi-facebook"></i>
+                <span class="blind">페이스북</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
