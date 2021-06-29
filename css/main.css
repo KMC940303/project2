@@ -21,6 +21,9 @@
     0% {width: 0%;}
     100% {width: 100%;}
 }
+@media screen and (max-width: 1280px){
+    
+}
 
 /* 본문 2,3 공통 */
 .product_tab{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content:center; justify-content:center; flex-wrap: wrap; margin:100px 100px;}
@@ -30,6 +33,8 @@
 .product_tab ul{display: flex; justify-content: space-around; padding: 60px 0;}
 .product_tab ul li{text-align: center; cursor: pointer;}
 .product_tab ul li:hover, .product_tab ul li:focus{color: #2699fb;}
+.product_tab ul li img{transition: all 0.3s ease-out;}
+.product_tab ul li:hover img, .product_tab ul li:focus img{transform: scale(1.1, 1.1); z-index: 9;}
 .product_tab .tabpanel{position: relative; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; justify-content: space-around; -webkit-align-items: center; align-items: center;}
 #moniter .product_tab .tabpanel{flex-direction: row-reverse;}
 .product_tab .panel img{width: 42%;}
@@ -43,16 +48,21 @@
 #event h3{font-size: 80px; text-align: center; color: #4e3b3b;}
 #event .all{position: absolute; right: 48.1%; margin: 40px 0; color: #2699fb;}
 #event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 100px 50px; justify-content: space-between;}
-#event ul li{cursor: pointer; width: 50%;}
-#event ul li:hover, #event ul li:focus{}
+#event ul li{cursor: pointer; padding: 30px;}
+#event ul li:hover a, #event ul li:focus a{color: #2699fb;}
+#event ul li img{width: 100%; transition: all 0.3s ease-out;}
+#event ul li:hover img, #event ul li:focus img{transform: scale(1.1, 1.1); z-index: 9;}
 #event ul li a{font-size: 20px; margin: 30px 0;}
+#event ul li .e_txt_container{background-color: #f5f5f5; width:100%;}
 
-#footer{width: 100%; background: #f5f5f5;}
-#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; margin:100px; width: 100%; justify-content: space-between;}
+#footer{background: #f5f5f5; height: 500px;}
+#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; margin:30px; width: 100%; justify-content: space-between; padding: 50px;}
 #footer a:hover, #footer a:focus{color: #2699fb;}
 #footer ul h3{font-size: 20px;}
-#footer .showlist{flex-direction: column; padding: 30px 20px;}
+#footer .showlist{padding: 30px 20px;}
 #footer .showlist li{padding: 20px 0; font-size: 15px;}
 #footer i{font-size: 45px; padding: 30px 14px;}
-#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height: 50px;}
-#footer .footer_last a{padding: 0 10px;}
+#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height: 50px; justify-content:center; background: red;}
+#footer .footer_last a, #footer .footer_last p{padding: 10px 10px;}
+#footer .footer_last i{font-size: 16px;}
+
