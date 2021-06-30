@@ -21,9 +21,6 @@
     0% {width: 0%;}
     100% {width: 100%;}
 }
-@media screen and (max-width: 1280px){
-    
-}
 
 /* 본문 2,3 공통 */
 .product_tab{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content:center; justify-content:center; flex-wrap: wrap; margin:100px 100px;}
@@ -44,25 +41,26 @@
 .product_tab .panel_txt a{border: 2px solid #bce0fd; margin: 20px; padding: 5px 30px; transition: background 0.5s; color: #4e3b3b;}
 .product_tab .panel_txt a:hover, .product_tab .panel_txt a:focus{background: #bce0fd; color: #fff;}
 
-#event{width: 100%; height: 900px; margin: 10px 0; position: relative; margin: 60px 0;}
+#event{width: 100%; position: relative; margin: 130px 0;}
 #event h3{font-size: 80px; text-align: center; color: #4e3b3b;}
 #event .all{position: absolute; right: 48.1%; margin: 40px 0; color: #2699fb;}
-#event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 100px 50px; justify-content: space-between;}
+#event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: space-between; width:80%; margin: 4% auto;}
 #event ul li{cursor: pointer; padding: 30px;}
 #event ul li:hover a, #event ul li:focus a{color: #2699fb;}
 #event ul li img{width: 100%; transition: all 0.3s ease-out;}
 #event ul li:hover img, #event ul li:focus img{transform: scale(1.1, 1.1); z-index: 9;}
 #event ul li a{font-size: 20px; margin: 30px 0;}
 #event ul li .e_txt_container{background-color: #f5f5f5; width:100%;}
+#event ul li .img_box{overflow: hidden; width:100%;}
 
-#footer{background: #f5f5f5; height: 500px;}
-#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; margin:30px; width: 100%; justify-content: space-between; padding: 50px;}
-#footer a:hover, #footer a:focus{color: #2699fb;}
-#footer ul h3{font-size: 20px;}
-#footer .showlist{padding: 30px 20px;}
-#footer .showlist li{padding: 20px 0; font-size: 15px;}
-#footer i{font-size: 45px; padding: 30px 14px;}
-#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height: 50px; justify-content:center; background: red;}
-#footer .footer_last a, #footer .footer_last p{padding: 10px 10px;}
-#footer .footer_last i{font-size: 16px;}
+@media screen and (max-width: 1280px){
+    #event ul{width: 90%;}
+}
+@media screen and (max-width: 1080px){
+    #content{width: 100%;}
+    .main_tab {display: none;}
+    #event{width: 100%;}
+    #event h3, #event .all{display: none; overflow: hidden;}
+    #event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: column; align-items: center;}
+}
 

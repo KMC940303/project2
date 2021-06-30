@@ -40,6 +40,7 @@ a{display: inline-block;}
 a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
 header, nav, main, section, footer{display: block;}
 
+#wrap{width: 100%;}
 .f_l{float: left;}
 .f_r{float: right;}
 .p_r{position: relative;}
