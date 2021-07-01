@@ -32,18 +32,6 @@
 
 #mHeader{height: 90px; visibility: hidden; overflow: hidden;}
 
-/* footer */
-#footer{background: #f5f5f5;}
-#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; width: 100%; justify-content: space-evenly; padding: 50px 0 100px;}
-#footer a:hover, #footer a:focus{color: #2699fb;}
-#footer ul h3{font-size: 20px; padding-top:50px;}
-#footer .showlist{padding: 30px 20px;}
-#footer .showlist li{padding: 20px 0; font-size: 15px;}
-#footer .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
-#footer i{font-size: 30px; padding: 30px 5px;}
-#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height:60px; justify-content:center;}
-#footer .footer_last a, #footer .footer_last p{padding: 25px 10px;}
-#footer .footer_last i{font-size: 16px;}
 
 @media screen and (max-width:1280px){
     #pcHeader .logo{left: 40px; top: 31px; width: 130px;}
@@ -61,7 +49,7 @@
 
 @media screen and (max-width: 1080px){
     #pcHeader{visibility: hidden;}
-    #mHeader{visibility: visible;height: 90px;overflow: hidden;}
+    #mHeader{visibility: visible; height: 90px;}
     #mHeader .logo{position: absolute;bottom: 25%; left: 35%; right: 35%; text-align: center;}
     #mHeader .logo img{width: 100%;}
     #mHeader .gnb_open_btn{position: absolute; bottom: 25%; right: 95%; left: 5%;}
@@ -69,7 +57,28 @@
     #mHeader .search_btn{position: absolute; bottom: 25%; right: 8%; left: 92%;}
     #mHeader .search_btn .xi-search{font-size:40px;}
 
-    #footer .footer_last{display: none;}
+    .mGnb_wrap{background: #fff; padding: 90px 0 0; width: 100%; height: 100%;}
+    #mGnb{text-align: center;}
+    #mGnb > ul li ul{visibility: hidden;}
+
+
+
+    #footer .footer_last{visibility: hidden;}
     #footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex;  width: 100%; flex-direction: column;}
     #footer > ul .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center;}
 }
+
+
+/* footer */
+#footer{background: #f5f5f5;}
+#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; width: 100%; justify-content: space-evenly; padding: 50px 0 100px;}
+#footer a:hover, #footer a:focus{color: #2699fb;}
+#footer ul h3{font-size: 20px; padding-top:50px;}
+#footer .showlist{padding: 30px 20px;}
+#footer .showlist li{padding: 20px 0; font-size: 15px;}
+#footer .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+#footer i{font-size: 30px; padding: 30px 5px;}
+#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height:60px; justify-content:center;}
+#footer .footer_last a, #footer .footer_last p{padding: 25px 10px;}
+#footer .footer_last i{font-size: 16px;}
+
