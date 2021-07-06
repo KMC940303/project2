@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 1080px){
     #pcHeader{visibility: hidden;}
-    #mHeader{visibility: visible; height: 90px;}
+    #mHeader{visibility: visible;}
     #mHeader .logo{position: absolute;bottom: 25%; left: 35%; right: 35%; text-align: center;}
     #mHeader .logo img{width: 100%;}
     #mHeader .gnb_open_btn{position: absolute; bottom: 25%; right: 95%; left: 5%;}
@@ -57,9 +57,14 @@
     #mHeader .search_btn{position: absolute; bottom: 25%; right: 8%; left: 92%;}
     #mHeader .search_btn .xi-search{font-size:40px;}
 
-    .mGnb_wrap{background: #fff; padding: 90px 0 0; width: 100%; height: 100%;}
+    .mGnb_wrap{position: fixed; top: 0; left: 0; background: rgba(255, 255, 255,.5); padding: 90px 0 0; width: 100%; height: 100%; overflow-y: auto;}
     #mGnb{text-align: center;}
-    #mGnb > ul li ul{visibility: hidden;}
+    #mGnb > ul > li > a{font-size: 32px;}
+    #mGnb ul li
+
+    
+
+    /* #mGnb > ul li ul{visibility: hidden;} */
 
 
 
