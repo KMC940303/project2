@@ -32,6 +32,19 @@
 
 #mHeader{height: 90px; visibility: hidden; overflow: hidden;}
 
+/* footer */
+#footer{background: #f5f5f5;}
+#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; width: 100%; justify-content: space-evenly; padding: 50px 0 100px;}
+#footer a:hover, #footer a:focus{color: #2699fb;}
+#footer ul h3{font-size: 20px; padding-top:50px;}
+#footer .showlist{padding: 30px 20px;}
+#footer .showlist li{padding: 20px 0; font-size: 15px;}
+#footer .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
+#footer i{font-size: 30px; padding: 30px 5px;}
+#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height:60px; justify-content:center;}
+#footer .footer_last a, #footer .footer_last p{padding: 25px 10px;}
+#footer .footer_last i{font-size: 16px;}
+
 
 @media screen and (max-width:1280px){
     #pcHeader .logo{left: 40px; top: 31px; width: 130px;}
@@ -49,19 +62,26 @@
 
 @media screen and (max-width: 1080px){
     #pcHeader{visibility: hidden;}
-    #mHeader{visibility: visible;}
-    #mHeader .logo{position: absolute;bottom: 25%; left: 35%; right: 35%; text-align: center;}
-    #mHeader .logo img{width: 100%;}
-    #mHeader .gnb_open_btn{position: absolute; bottom: 25%; right: 95%; left: 5%;}
-    #mHeader .gnb_open_btn .xi-bars{font-size:40px;}
-    #mHeader .search_btn{position: absolute; bottom: 25%; right: 8%; left: 92%;}
-    #mHeader .search_btn .xi-search{font-size:40px;}
+    #mHeader{visibility: visible; height: 6.510vw; background: #fff; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items:center; align-items: center; -webkit-justify-content:center; justify-content:center;}
+    #mHeader .logo{}
+    #mHeader .logo img{width: 12.370vw;}
 
-    .mGnb_wrap{position: fixed; top: 0; left: 0; background: rgba(255, 255, 255,.5); padding: 90px 0 0; width: 100%; height: 100%; overflow-y: auto;}
-    #mGnb{text-align: center;}
-    #mGnb > ul > li > a{font-size: 32px;}
-    #mGnb ul li
+    #mHeader .search_btn{position: absolute; right: 8%; top: 1.563vw;}
+    #mHeader .search_btn .xi-search{font-size:3.255vw;}
+    #mHeader .gnb_open_btn{position: absolute; left: 8%; top: 1.563vw;}
+    #mHeader .gnb_open_btn .xi-bars{font-size:3.255vw;}
 
+    .mGnb_wrap{position: fixed; top: 0; left: 0; background: #fff; width: 100%; height: 100%; overflow-y: auto;}
+    .mGnb_wrap .top{height: 6.510vw; background: #fff; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items:center; align-items: center; -webkit-justify-content:center; justify-content:center;}
+    .mGnb_wrap .top img{width: 12.370vw;}
+    #mGnb{padding:3.906vw 7.161vw;}
+
+    #mGnb a{display: block;}
+    #mGnb .dep1 > li > a{font-size: 3.645vw; line-height: 1.7; position: relative; background: pink;}
+    #mGnb .dep1 > li > a::before{content: "\e941"; position: absolute; top: 50%; right: 3.906vw; font-family: xeicon; font-size: 3.906vw; color: #000; transform: translateY(-50%);}
+    #mGnb .dep2{padding: 0 3.906vw; background: aqua;}
+    #mGnb .dep2 > li > a{font-size: 2.865vw; line-height: 1.7;}
+    #mGnb .dep3{background: beige; font-size: 2.343vw; line-height: 1.7;}
     
 
     /* #mGnb > ul li ul{visibility: hidden;} */
@@ -73,17 +93,8 @@
     #footer > ul .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center;}
 }
 
+@media screen and (max-width: 767px){
 
-/* footer */
-#footer{background: #f5f5f5;}
-#footer > ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; width: 100%; justify-content: space-evenly; padding: 50px 0 100px;}
-#footer a:hover, #footer a:focus{color: #2699fb;}
-#footer ul h3{font-size: 20px; padding-top:50px;}
-#footer .showlist{padding: 30px 20px;}
-#footer .showlist li{padding: 20px 0; font-size: 15px;}
-#footer .sns{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex;}
-#footer i{font-size: 30px; padding: 30px 5px;}
-#footer .footer_last{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-top: 1px dotted #4e3b3b; width: 100%; height:60px; justify-content:center;}
-#footer .footer_last a, #footer .footer_last p{padding: 25px 10px;}
-#footer .footer_last i{font-size: 16px;}
+}
+
 
