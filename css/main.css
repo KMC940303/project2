@@ -57,10 +57,11 @@
     #event ul{width: 90%;}
 }
 @media screen and (max-width: 1080px){
-    #content{width: 100%;}
+    #content{width: 100%; padding-top: 70px;}
     .main_tab {display: none;}
     #event{width: 100%;}
     #event h3, #event .all{display: none; overflow: hidden;}
     #event ul{display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: column; align-items: center;}
+    
 }
 

@@ -35,7 +35,7 @@ $(document).ready(function () {
                 if (!$header.hasClass('active')) $header.addClass('on');
             } else { //모바일 - 열기만 가능함
                 // 열려질 높이를 계산하자??
-                const searchWrapHei = $('#mHeader .search .m_on_top').outerHeight() + $('#mSearch').outerHeight();
+                const searchWrapHei = $('#mHeader .search_wrap').outerHeight();
                 console.log(searchWrapHei);
                 $(this).next().css('visibility', 'visible').stop().animate({
                     maxHeight: searchWrapHei
@@ -78,4 +78,86 @@ $(document).ready(function () {
             });
         }
     });
+
+      //태블릿, 모바일
+  $(window).on('scroll', function () {
+    const scrollY = $(this).scrollTop();
+    //console.log(scrollY);
+    if (scrollY > 0) $('#mHeader').addClass('on');
+    else $('#mHeader').removeClass('on');
+  });
+
+  //모바일 전체 메뉴 열기
+  const $mgnbWrap = $('#mHeader .mGnb_wrap');
+  $('#mHeader .gnb_open_btn').on('click', function () {
+    const $first =  $mgnbWrap.find('.first');
+    const $last =  $mgnbWrap.find('.last');
+    const $openBtn = $(this); //닫기 버튼을 누른 경우 포커스 강제 이동
+
+    $mgnbWrap.css('visibility', 'visible').stop().animate({left: 0}, 300, function () {
+      $first.focus();  //포커스 아웃라인 안보인다
+      $('html').css({overflowY: 'hidden', height: '100%'});
+    });
+
+    //키보드 제어 접근성 - keydown
+    //$first에서 shift+tab 눌러 이전으로 나가는 경우 마지막으로 포커스 이동
+    $first.on('keydown', function (e) {
+      //console.log(e.keyCode);  //tab => 9
+      if ( e.shiftKey && e.keyCode === 9 ) {
+        e.preventDefault();
+        $last.focus();
+      }
+    })
+
+    //$last에서 (shift는 누르면 안됨)tab만 눌러 다음으로 나가는 경우 처음으로 포커스 이동
+    $last.on('keydown', function (e) {
+      if (!e.shiftKey && e.keyCode === 9) {
+        e.preventDefault();
+        $first.focus();
+      }
+    });
+
+    //닫기 버튼 클릭으로 닫아주기 : animate() -> 완료함수 none, 열기버튼으로 포커스 강제 이동
+    $mgnbWrap.find('.gnb_close_btn').on('click', function () {
+      $('html').removeAttr('style');
+      $('#mgnbDim').stop().fadeOut('fast', function () {
+        $(this).remove();
+      });
+
+      $mgnbWrap.stop().animate({left: '-100%'}, 300, function () {
+        $(this).css('visibility', 'hidden');
+        $openBtn.focus();
+        //열려진 #mGnb는 닫아준다 - 추가 - 연결해서 하자!
+        $('#mGnb ul li.on').removeClass('on').children('ul').css({visibility: 'hidden', maxHeight: 0});
+      });
+    });
+  });
+
+  //#mGnb
+  const $mGnb = $('#mGnb > ul');
+  // $mGnb.find('.dep2, .dep3').hide(); //depth1 <a>를 클릭했을 경우 depth3는 숨겨진 채로 열리기위해 => css에서 제어함
+
+  //모바일 네비게이션 클릭 이벤트 : 뎁스1과 뎁스2(.go를 가지지 않은) a
+  $mGnb.find('a').on('click', function () {
+    if ($(this).next().size() === 0) {	//하위에 뎁스 ul이 없는 경우
+      return true;
+    }else {								//하위에 뎁스 ul이 있는 경우
+      //초기화 : 뎁스2, 뎁스3 동시에 addBack()로 제어 중..
+      $(this).parent().siblings().find('> ul > li').addBack().removeClass('on').find('ul').stop().animate({maxHeight: 0}, function () {
+        $(this).css('visibility', 'hidden');
+      });
+
+      
+      //현재설정
+      if ($(this).parent().hasClass('on')) { // 현재 열려진 상태인 경우
+        $(this).parent().find('> ul > li').addBack().removeClass('on').find('ul').stop().animate({maxHeight: 0}, 800, function () {
+          $(this).css('visibility', 'hidden');
+        });
+      } else { // 현재 닫겨진 상태인 경우
+        $(this).next().css('visibility', 'visible').stop().animate({maxHeight: 500}, 800).parent().toggleClass('on');
+      }
+    }
+
+    return false;
+  });
 });
